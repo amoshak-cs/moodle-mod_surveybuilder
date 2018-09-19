@@ -20,17 +20,17 @@
  * Setting the $plugin->version to 0 prevents the plugin from being installed.
  * See https://docs.moodle.org/dev/version.php for more info.
  *
- * @package    mod_newmodule
- * @copyright  2016 Your Name <your@email.address>
+ * @package    mod_surveybuilder
+ * @copyright  2018 Marina Glancy
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'mod_newmodule';
-$plugin->version = 0;
+$plugin->component = 'mod_surveybuilder';
+$plugin->version = 2018091900;
 $plugin->release = 'v0.0';
-$plugin->requires = 2014051200;
+$plugin->requires = 2018050000;
 $plugin->maturity = MATURITY_ALPHA;
 $plugin->cron = 0;
 $plugin->dependencies = array();

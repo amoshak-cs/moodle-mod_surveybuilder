@@ -28,7 +28,7 @@ this module template code.
   the name of your module
 
   On Linux you can perform this and previous steps by calling:
-  $ find . -depth -name '*newmodule*' -execdir bash -c 'mv -i "$1" "${1//newmodule/widget}"' bash {} \;
+  $ find . -depth -name '*newmodule*' -execdir bash -c 'mv -i "$1" "${1//newmodule/surveybuilder}"' bash {} \;
 
 * Place the widget folder into the /mod folder of the moodle
   directory.

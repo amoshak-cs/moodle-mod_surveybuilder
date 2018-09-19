@@ -16,27 +16,27 @@
 
 
 /**
- * English strings for newmodule
+ * English strings for surveybuilder
  *
  * You can have a rather longer description of the file as well,
  * if you like, and it can span multiple lines.
  *
- * @package    mod_newmodule
- * @copyright  2016 Your Name <your@email.address>
+ * @package    mod_surveybuilder
+ * @copyright  2018 Marina Glancy
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'newmodule';
-$string['modulenameplural'] = 'newmodules';
-$string['modulename_help'] = 'Use the newmodule module for... | The newmodule module allows...';
-$string['newmodule:addinstance'] = 'Add a new newmodule';
-$string['newmodule:submit'] = 'Submit newmodule';
-$string['newmodule:view'] = 'View newmodule';
-$string['newmodulefieldset'] = 'Custom example fieldset';
-$string['newmodulename'] = 'newmodule name';
-$string['newmodulename_help'] = 'This is the content of the help tooltip associated with the newmodulename field. Markdown syntax is supported.';
-$string['newmodule'] = 'newmodule';
-$string['pluginadministration'] = 'newmodule administration';
-$string['pluginname'] = 'newmodule';
+$string['modulename'] = 'surveybuilder';
+$string['modulenameplural'] = 'surveybuilders';
+$string['modulename_help'] = 'Use the surveybuilder module for... | The surveybuilder module allows...';
+$string['surveybuilder:addinstance'] = 'Add a new surveybuilder';
+$string['surveybuilder:submit'] = 'Submit surveybuilder';
+$string['surveybuilder:view'] = 'View surveybuilder';
+$string['surveybuilderfieldset'] = 'Custom example fieldset';
+$string['surveybuildername'] = 'surveybuilder name';
+$string['surveybuildername_help'] = 'This is the content of the help tooltip associated with the surveybuildername field. Markdown syntax is supported.';
+$string['surveybuilder'] = 'surveybuilder';
+$string['pluginadministration'] = 'surveybuilder administration';
+$string['pluginname'] = 'surveybuilder';
