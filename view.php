@@ -31,7 +31,7 @@ require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
 require_once(dirname(__FILE__).'/lib.php');
 
 $id = optional_param('id', 0, PARAM_INT); // Course_module ID, or
-$n  = optional_param('n', 0, PARAM_INT);  // ... surveybuilder instance ID - it should be named as the first character of the module.
+$n  = optional_param('s', 0, PARAM_INT);  // ... surveybuilder instance ID - it should be named as the first character of the module.
 
 if ($id) {
     $cm         = get_coursemodule_from_id('surveybuilder', $id, 0, false, MUST_EXIST);
@@ -42,7 +42,7 @@ if ($id) {
     $course     = $DB->get_record('course', array('id' => $surveybuilder->course), '*', MUST_EXIST);
     $cm         = get_coursemodule_from_instance('surveybuilder', $surveybuilder->id, $course->id, false, MUST_EXIST);
 } else {
-    error('You must specify a course_module ID or an instance ID');
+    print_error('You must specify a course_module ID or an instance ID');
 }
 
 require_login($course, true, $cm);
@@ -78,6 +78,9 @@ if ($surveybuilder->intro) {
 
 // Replace the following lines with you own code.
 echo $OUTPUT->heading('Yay! It works!');
+
+$handler = new \mod_surveybuilder\customfield\handler($surveybuilder->id);
+echo $OUTPUT->box(html_writer::link($handler->get_configuration_url(), 'Edit fields'));
 
 // Finish the page.
 echo $OUTPUT->footer();
