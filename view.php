@@ -79,7 +79,7 @@ if ($surveybuilder->intro) {
 // Replace the following lines with you own code.
 echo $OUTPUT->heading('Yay! It works!');
 
-$handler = new \mod_surveybuilder\customfield\handler($surveybuilder->id);
+$handler = new \mod_surveybuilder\customfield\fields_handler($surveybuilder->id);
 echo $OUTPUT->box(html_writer::link($handler->get_configuration_url(), 'Edit fields'));
 
 // Finish the page.

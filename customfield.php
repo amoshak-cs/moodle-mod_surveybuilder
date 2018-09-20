@@ -29,7 +29,7 @@ require_login($course, $cm);
 
 $PAGE->set_url(new moodle_url('/mod/surveybuilder/customfield.php', ['s' => $moduleid]));
 
-$handler = new \mod_surveybuilder\customfield\handler($moduleid);
+$handler = new \mod_surveybuilder\customfield\fields_handler($moduleid);
 if (!$handler->can_configure()) {
     throw new moodle_exception('You shouldn\'t be here');
 }

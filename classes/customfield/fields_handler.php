@@ -33,21 +33,13 @@ defined('MOODLE_INTERNAL') || die();
  * @copyright  2018 Marina Glancy
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class handler extends \core_customfield\handler {
+class fields_handler extends \core_customfield\handler {
 
-    public function get_component(): string {
-        return 'mod_surveybuilder';
-    }
-
-    public function get_area(): string {
-        return 'fields';
-    }
-
-    public function can_configure($itemid = null): bool {
+    public function can_configure(): bool {
         return true; // TODO
     }
 
-    public function can_edit($recordid = null, $itemid = null) : bool {
+    public function can_edit($recordid = null) : bool {
         return true; // TODO
     }
 
