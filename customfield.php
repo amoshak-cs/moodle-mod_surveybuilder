@@ -22,14 +22,14 @@
 
 require_once(dirname(dirname(__DIR__)) . '/config.php');
 
-$moduleid  = optional_param('s', 0, PARAM_INT);
+$moduleid  = required_param('s', PARAM_INT);
 
 list($course, $cm) = get_course_and_cm_from_instance($moduleid, 'surveybuilder');
-require_login($course, $cm);
+require_login($course, false, $cm);
 
 $PAGE->set_url(new moodle_url('/mod/surveybuilder/customfield.php', ['s' => $moduleid]));
 
-$handler = new \mod_surveybuilder\customfield\fields_handler($moduleid);
+$handler = \mod_surveybuilder\customfield\fields_handler::create($moduleid);
 if (!$handler->can_configure()) {
     throw new moodle_exception('You shouldn\'t be here');
 }

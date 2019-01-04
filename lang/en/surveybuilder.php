@@ -28,15 +28,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['customfields'] = 'Edit custom fields';
 $string['modulename'] = 'surveybuilder';
-$string['modulenameplural'] = 'surveybuilders';
 $string['modulename_help'] = 'Use the surveybuilder module for... | The surveybuilder module allows...';
+$string['modulenameplural'] = 'surveybuilders';
+$string['pluginadministration'] = 'surveybuilder administration';
+$string['pluginname'] = 'surveybuilder';
+$string['surveybuilder'] = 'surveybuilder';
 $string['surveybuilder:addinstance'] = 'Add a new surveybuilder';
 $string['surveybuilder:submit'] = 'Submit surveybuilder';
 $string['surveybuilder:view'] = 'View surveybuilder';
 $string['surveybuilderfieldset'] = 'Custom example fieldset';
 $string['surveybuildername'] = 'surveybuilder name';
 $string['surveybuildername_help'] = 'This is the content of the help tooltip associated with the surveybuildername field. Markdown syntax is supported.';
-$string['surveybuilder'] = 'surveybuilder';
-$string['pluginadministration'] = 'surveybuilder administration';
-$string['pluginname'] = 'surveybuilder';

@@ -476,5 +476,10 @@ function surveybuilder_extend_navigation(navigation_node $navref, stdClass $cour
  * @param navigation_node $surveybuildernode surveybuilder administration node
  */
 function surveybuilder_extend_settings_navigation(settings_navigation $settingsnav, navigation_node $surveybuildernode=null) {
-    // TODO Delete this function and its docblock, or implement it.
+    global $PAGE;
+    //if (has_capability('mod/workshop:editdimensions', $PAGE->cm->context)) {
+        $url = new moodle_url('/mod/surveybuilder/customfield.php', array('s' => $PAGE->cm->instance));
+        $surveybuildernode->add(get_string('customfields', 'mod_surveybuilder'), $url, settings_navigation::TYPE_SETTING);
+    //}
+
 }
