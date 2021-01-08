@@ -29,7 +29,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['customfields'] = 'Edit custom fields';
-$string['modulename'] = 'surveybuilder';
+$string['modulename'] = 'Survey Builder';
 $string['modulename_help'] = 'Use the surveybuilder module for... | The surveybuilder module allows...';
 $string['modulenameplural'] = 'Survey Builders';
 $string['pluginadministration'] = 'surveybuilder administration';
