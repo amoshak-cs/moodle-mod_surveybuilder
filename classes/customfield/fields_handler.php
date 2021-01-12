@@ -48,7 +48,7 @@ class fields_handler extends \core_customfield\handler {
      * @param int $instanceid
      * @return bool
      */
-    public function can_edit(field_controller $field, $instanceid = null): bool {
+    public function can_edit(field_controller $field, int $instanceid = 0): bool {
         return true; // TODO
     }
 
@@ -56,7 +56,7 @@ class fields_handler extends \core_customfield\handler {
         return new \moodle_url('/mod/surveybuilder/customfield.php', ['s' => $this->get_itemid()]);
     }
 
-    public function can_view(field_controller $field, $instanceid = null): bool {
+    public function can_view(field_controller $field, int $instanceid): bool {
         return true; // TODO
     }
 
