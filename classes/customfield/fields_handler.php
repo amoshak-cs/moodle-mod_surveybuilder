@@ -60,7 +60,7 @@ class fields_handler extends \core_customfield\handler {
         return true; // TODO
     }
 
-    public function get_instance_context(int $instanceid): \context {
+    public function get_instance_context(int $instanceid = 0): \context {
         return $this->get_configuration_context();
     }
 
